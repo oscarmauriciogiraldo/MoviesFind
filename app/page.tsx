@@ -1,11 +1,14 @@
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="md:container mx-auto pt-5">
       <h3>hola</h3>
-      <Button>Click me</Button>
+      
+      {/* container card */}
+      <div className="cardsContainer">
+        
+      </div>
     </main>
   );
 }
