@@ -1,0 +1,90 @@
+.cardsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background: red;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px; */
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        background: green;
+        column-gap: 3px;
+        .mcard{
+            position: relative;
+            width: 320px;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            .movieposter{
+                position: relative;
+                /* overflow: hidden; */
+                &::before{
+                    content: '';
+                    position: absolute;
+                    bottom: -180px;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(0deg, #1064a6 50%, transparent);
+                    transition: 0.5s;
+                    z-index: 1;
+                    &:hover{
+                        bottom: 0px;
+                    }
+                }
+                img{
+                    width: 100%;
+                    transition: ease 0.5s;
+                    &:hover{
+                        transform: translateY(-50px);
+                        filter: blur(5px);
+                    }
+                }
+            }
+            .detailsCard{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 20px;
+                width: 100%;
+                z-index: 2;
+                transition: 0.5s;
+                &:hover{
+                    bottom: 0;
+                }
+                .name{
+                    max-width: 180px; 
+                }
+                h3{
+                    font-size: 0.8em;
+                    color: #fff;
+                }
+                .rating{
+                    position: relative;
+                    padding: 5px 0px;
+                }
+                .tags{
+                    position: relative;
+                    margin-top: 5px;
+                    span{
+                        padding: 2px 5px;
+                        color: #fff;
+                        background: #03a8f5;
+                        border-radius: 4px;
+                        &:nth-child(2){
+                            background: #ff5722;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

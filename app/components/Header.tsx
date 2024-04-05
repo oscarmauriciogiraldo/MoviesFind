@@ -1,10 +1,11 @@
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar} from "@nextui-org/react";
 import { SearchIcon } from "./icons/Searchicon";
+import styles from "./../../styles/Header.module.scss"
 
 const Header = () => {
     return (
-        <div>
-            <Navbar isBordered maxWidth="2xl">
+        <Navbar isBordered maxWidth="2xl" bg-transparent>
+                
                 <NavbarContent justify="start">
                     <NavbarBrand className="mr-4">
                         <p className="hidden sm:block font-bold text-inherit">MoviesFind</p>
@@ -12,7 +13,7 @@ const Header = () => {
                     
                 </NavbarContent>
 
-                <NavbarContent as="div" className="items-center" justify="end">
+                <NavbarContent as="div" className="items-center" justify="center">
                     <Input
                         classNames={{
                             base: "max-w-full md:w-[400px] h-10",
@@ -28,7 +29,6 @@ const Header = () => {
                     
                 </NavbarContent>
             </Navbar>
-        </div>
     );
 };
 
