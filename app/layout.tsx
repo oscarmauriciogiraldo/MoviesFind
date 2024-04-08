@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body >
         
         <div className={main.firstcontainer}>
           {/* Components */}
-          <Header></Header>
+          {/* <Header></Header> */}
           <Providers>
             {children}
           </Providers>
