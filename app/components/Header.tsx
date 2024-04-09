@@ -14,7 +14,7 @@ const Header = () => {
 
                 </div>
             </div>
-            <div className="searchContainer">
+            <div className={styles.searchContainer}>
 
             </div>
         </header>
