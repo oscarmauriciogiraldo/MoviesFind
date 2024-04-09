@@ -23,7 +23,7 @@ export default function RootLayout({
         
         <div className={main.firstcontainer}>
           {/* Components */}
-          {/* <Header></Header> */}
+          <Header></Header>
           <Providers>
             {children}
           </Providers>
