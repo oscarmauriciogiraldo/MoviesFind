@@ -4,6 +4,8 @@ import styles from "./../styles/Page.module.scss"
 
 export default async function Home() {
 
+  const baseURL = "http://image.tmdb.org/t/"
+
   /* Espera del metodo  */
   const getMovies  = await fetch("https://api.themoviedb.org/3/movie/popular", {
     headers: {
@@ -35,6 +37,8 @@ export default async function Home() {
             // eslint-disable-next-line react/jsx-key
             <div className={styles.mcard}>
               <div className={styles.movieposter}>
+                
+              
                 {/* <img src="assets/img/poster.jpg" alt=""> */}
               </div>
               <div className={styles.detailsCard}>

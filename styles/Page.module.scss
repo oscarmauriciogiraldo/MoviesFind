@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background: linear-gradient(#320141, #0d1423);
+    background: linear-gradient(#070009, #0d1423);
     /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px; */
@@ -63,7 +63,7 @@
             border-radius: 20px;
             overflow: hidden;
             cursor: pointer;
-            background: white;
+            /* background: white; */
             margin: 10px 0px;
             .movieposter{
                 position: relative;
@@ -81,7 +81,7 @@
                         bottom: 0px;
                     }
                 }
-                img{
+                .img{
                     width: 100%;
                     transition: ease 0.5s;
                     &:hover{
